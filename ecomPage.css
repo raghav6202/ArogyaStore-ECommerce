@@ -11,7 +11,8 @@
 --small-margin: 0.2rem;
 --large-margin: 1rem;
 }
-body
+
+*
 {
     margin: 0rem;
     padding: 0rem;  
@@ -29,13 +30,15 @@ height: 100%;
     "main main main main"
     "main main main main"
     "main main main main"
+    "main main main main"
     "footer footer footer footer";
+    row-gap: 1rem;
 }
 
 
 .nav-bar
 {
-padding: 0.5rem 0.5rem 1rem 0.5rem;
+/* padding: 0.5rem; */
 display: flex;
 flex-flow: row wrap;
 align-items: center;
@@ -68,12 +71,7 @@ grid-area: nav;
 color: var(--secondary-color);
 }
 
-.nav-bar
-{
-padding: 1.5rem 1rem;
-display: flex;
-align-items: center;
-}
+
 
 .nav-logo-name
 {
@@ -85,11 +83,11 @@ align-items: center;
 
 .nav-search
 {
-    /* height: 100%; */
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 25%; */
+    width: 25%;
     margin: var(--standard-margin);
 }
 
@@ -105,7 +103,7 @@ padding: 0.4rem;
 
 .search-bar
 {
-
+width: 100%;
     padding: 0.5rem;
     outline: none;
     border: none;
@@ -129,20 +127,88 @@ margin: var(--standard-margin);
     font-size: 1.1rem;
     display: flex;
     flex-flow: column;
+    align-items: center;
+    justify-content: center;
     gap: 0.2rem;
+    border-bottom: 2px solid white;
+}
+
+.nav-links:hover
+{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.active
+{
+    color: var(--secondary-color);
+}
+
+.ecomm-main
+{
+grid-area: main;
+
+
+}
+.carousel-container
+{
+
+    height: 25rem;
+display: flex;
+justify-content: center;
+align-items: center;
+background-size: 100% 25rem;
+background: rgb(32,208,255);
+background: linear-gradient(101deg, rgba(32,208,255,1) 0%, rgba(126,217,87,1) 100%);
+
+}
+
+
+.carousel-info
+{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 90%;
+}
+
+.carousel-heading
+{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.btn-carousel{
+
+    background-color: var(--primary-color);
+font-size: 1.25rem;
+font-weight: 500;
+}
+
+.btn-carousel:hover
+{
+  background-color: #06b6d4;
+    
 }
 
 
 
 
-
-
-
-
+.ecom-footer
+{
+    background-color: #EAEAEC;
+    grid-area: footer;
+}
 
 @media screen and (max-width:800px) 
 {
   
+    .nav-bar
+    {
+        justify-content: flex-start;
+    }
+
     .nav-search
     {
         height: 100%;
@@ -155,9 +221,8 @@ margin: var(--standard-margin);
     
     .small-btn
     {
-    
-        font-size: 1.1rem;
-    padding: 0.4rem;
+    padding: 0.1rem;
+        font-size:0.75rem;
         background-color: white;
         border: none;
         border-bottom: 2px solid white;
@@ -166,11 +231,18 @@ margin: var(--standard-margin);
     .search-bar
     {
     
-        padding: 0.5rem;
+        padding: 0.1rem;
         outline: none;
         border: none;
-        font-size: 1.1rem;
+        font-size: 0.75rem;
         border-bottom: 2px solid var(--primary-color);
+    }
+
+    .nav-links
+    {
+        font-size: 0.75rem;
+        margin: var(--small-margin);
+    
     }
 
 }
