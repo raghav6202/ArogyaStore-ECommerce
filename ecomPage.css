@@ -1,3 +1,176 @@
 @import url("styles.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400;1,500&display=swap');
 
+:root
+{
+--primary-color: #20D0FF;
+--secondary-color: #7ED957;
+--icon-color: #696B79;
+--standard-margin: 0.5rem;
+--small-margin: 0.2rem;
+--large-margin: 1rem;
+}
+body
+{
+    margin: 0rem;
+    padding: 0rem;  
+}
+
+.ecomm-app
+{
+margin: 0rem;
+padding: 0rem;
+height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+
+.nav-bar
+{
+padding: 0.5rem 0.5rem 1rem 0.5rem;
+display: flex;
+flex-flow: row wrap;
+align-items: center;
+justify-content: space-between;
+grid-area: nav;
+}
+
+.ecom-logo
+{
+    height: 4rem;
+    width: 4rem;
+    margin: 0.25rem;
+}
+
+.ecom-heading
+{
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0.25rem;
+}
+
+.primary-color
+{
+    color: var(--primary-color);
+}
+
+.secondary-color
+{
+color: var(--secondary-color);
+}
+
+.nav-bar
+{
+padding: 1.5rem 1rem;
+display: flex;
+align-items: center;
+}
+
+.nav-logo-name
+{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+
+}
+
+.nav-search
+{
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 25%; */
+    margin: var(--standard-margin);
+}
+
+.small-btn
+{
+
+    font-size: 1.1rem;
+padding: 0.4rem;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.search-bar
+{
+
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.nav-components
+{
+    display: flex;
+align-items: center;
+margin: var(--standard-margin);
+
+}
+
+.nav-links
+{
+    text-decoration: none;
+    margin: var(--standard-margin) ;
+    color: var(--icon-color);
+    font-size: 1.1rem;
+    display: flex;
+    flex-flow: column;
+    gap: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) 
+{
+  
+    .nav-search
+    {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        margin: var(--standard-margin);
+    }
+    
+    .small-btn
+    {
+    
+        font-size: 1.1rem;
+    padding: 0.4rem;
+        background-color: white;
+        border: none;
+        border-bottom: 2px solid white;
+    }
+    
+    .search-bar
+    {
+    
+        padding: 0.5rem;
+        outline: none;
+        border: none;
+        font-size: 1.1rem;
+        border-bottom: 2px solid var(--primary-color);
+    }
+
+}
