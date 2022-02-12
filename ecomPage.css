@@ -156,6 +156,7 @@ grid-area: main;
 {
 
     height: 25rem;
+    width: auto;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -318,6 +319,7 @@ width: 17.5rem;
         border: none;
         font-size: 0.75rem;
         border-bottom: 2px solid var(--primary-color);
+        margin: var(--standard-margin);
     }
 
     .nav-links
