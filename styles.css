@@ -227,6 +227,19 @@ align-items: center;
     text-align: center;
 }
 
+
+
+
+@media screen and (max-width:700px){
+
+    .horizontal-cards
+    {
+width: 90%;
+margin: 0.25rem 0.25rem 0.5rem 0.25rem;
+    }
+    
+}
+
 @media screen and (max-width : 600px)
 {
  
