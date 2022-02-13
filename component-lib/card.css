@@ -10,6 +10,8 @@
     
 }
 
+
+
 .horizontal-cards
 {
    width: 90%;
@@ -48,6 +50,7 @@ position: relative;
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
+    
 }
 
 .horizontal-card-info
@@ -60,8 +63,9 @@ position: relative;
 }
 .horizontal-card-heading
 {
-    font-size: 1.5rem;
-    font-weight: 700;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
 }
 
 .horizontal-card-price
