@@ -1,2 +1,41 @@
+
+@import url("./../forms.css");
 @import url("./../ecomPage.css");
-@import url("./../styles.css");
+
+.login-page-conatiner
+{
+    display: flex;
+justify-content: center;
+align-items: center;
+margin: 0%;
+padding: 0%;
+}
+
+.login-modal
+{
+    padding: 0.5rem;
+    margin: var(--standard-margin);
+    border: none;
+    width: 80%;
+}
+
+.login-sub-heading
+{
+    margin: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+.login-fields
+{
+    margin: 1rem;
+}
+
+.btn-login:hover
+{
+    background-color: var(--secondary-color);
+}
+
+#signup-link
+{
+    color: var(--default-color);
+}
+
