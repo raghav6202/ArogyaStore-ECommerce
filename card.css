@@ -1,160 +1,198 @@
 @import url("styles.css");
 
-:root{
-    --shadow-color: #d4d4d8;
-    --badge-color: #f43f5e;
-    --buybtn-bg-color: #22d3ee;
-    --buybtn-hover-color: #06b6d4;
-    --cartbtn-hover-color: #2dd4bf;
-    --block-clr: #e4e4e7;
-    
+:root {
+  --shadow-color: #d4d4d8;
+  --badge-color: #f43f5e;
+  --buybtn-bg-color: #22d3ee;
+  --buybtn-hover-color: #06b6d4;
+  --cartbtn-hover-color: #2dd4bf;
+  --block-clr: #e4e4e7;
 }
 
-.horizontal-cards
-{
-   width: 90%;
-   min-height: 10rem;
-   display: flex;
-   flex-flow: row wrap;
-gap: 1rem;
-align-items: center;
-   padding: 1rem;
-   margin: 0.5rem 0.5rem 1rem 0.5rem;
-border-radius: 1rem;
-
+.horizontal-cards {
+  width: 90%;
+  min-height: 10rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
+  border-radius: 1rem;
 }
 
-.horizontal-image-box
-{
-    height: 10rem;
-    width: 10rem;
-margin: 0.25;
-position: relative;
-
+.horizontal-image-box {
+  height: 10rem;
+  width: 10rem;
+  margin: 0.25;
+  position: relative;
 }
-.horizontal-badge
-{
-    padding: 0.1rem;
-    border-radius: 0.5rem;
-    background-color: var(--badge-color);
-    position: relative;
-    width: 60px;
-    bottom: 164px;
-    left: 97px;
+.horizontal-badge {
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+  background-color: var(--badge-color);
+  position: relative;
+  width: 60px;
+  bottom: 164px;
+  left: 97px;
 }
 
-.card-image
-{
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
+.horizontal-card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
 }
 
-.card-info
-{
-    display: flex;
-    flex-flow: column wrap;
-    gap: 0.5rem;
-    padding: 0.5rem;
-    margin: 00.25rem;
+.horizontal-card-info {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin: 00.25rem;
 }
-.card-heading
-{
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.card-price
-{
-    font-size: 1.25rem;
-    font-weight: 600;
+.horizontal-card-heading {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
 }
 
-.card-buttons
-{
-    display: flex;
-    gap: 1rem;
+.horizontal-card-price {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
-.btn-buy
-{
-    background-color: var(--buybtn-bg-color) ;
+.horizontal-card-buttons {
+  display: flex;
+  gap: 1rem;
 }
 
-.btn-buy:hover
-{
-    background-color: var(--buybtn-hover-color) ;
+.horizontal-btn-buy {
+  background-color: var(--buybtn-bg-color);
 }
 
-.btn-cart:hover
-{
-    background-color: var(--cartbtn-hover-color) ;
+.horizontal-btn-buy:hover {
+  background-color: var(--buybtn-hover-color);
 }
 
-.vertical-card
-{
-    width: 15rem;
-    box-sizing: border-box;
-    margin: 0.5rem 0.5rem 1rem 0.5rem;
-    display: flex;
-    flex-flow: column;
-    border-radius: 0.1rem;
+.horizontal-btn-cart:hover {
+  background-color: var(--cartbtn-hover-color);
 }
-.shadow
-{
-    box-shadow: 0rem 0rem 0.5rem 0.5rem var(--shadow-color);
-}
-.vertical-image-box
-{
-    box-sizing: border-box;
-height: 30%;
+.shadow {
+  box-shadow: 0rem 0rem 0.5rem 0.5rem var(--shadow-color);
 }
 
-.vertical-card-image
-{
-    width: 100%;
-    height: 100%;
+.vertical-card {
+  height: max-content;
+  width: 300px;
+  background-color: white;
+  border-radius: 2px;
 }
 
-.vertical-badge
-{
-    position: relative;
-    bottom: 315px;
-    left: 0px;
-    padding: 0.2rem;
-    border-radius: 0.1rem;
-    background-color: var(--badge-color);
+.card-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem 0;
 }
 
-.close-btn
-{
-    position: relative;
-    bottom: 319px;
-    left: 110px;
-    padding: 0.1rem;
-    font-size: 1.25rem;
+.card-text {
+  font-size: 0.9rem;
+  color: #444444;
+  padding: 1rem;
 }
 
-.close-btn:hover
-{
-    
-    background-color: var(--block-clr)
-
+.ecomm {
+  width: 230px;
+  box-shadow: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 0.5rem 0.5rem var(--shadow-color);
 }
 
-.overlay-layer
-{
-    opacity: 0.5;
-    background-color:var(--block-clr) ;
+.vertical-badge {
+  position: absolute;
+  top: 20px;
+  left: -1px;
+  background-color: var(--primary-color);
+  color: var(--default-color);
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
 }
 
+.vertical-card-image {
+  position: relative;
+  text-align: center;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
 
-@media screen and (max-width:700px){
+.vertical-card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+}
 
-    .horizontal-cards
-    {
-width: 90%;
-margin: 0.25rem 0.25rem 0.5rem 0.25rem;
-    }
-    
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border: none;
+  outline: none;
+  width: 20px;
+  background-color: transparent;
+}
+
+.ecomm .card-heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.ecomm .card-text {
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444444;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ecomm .card-price {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.btn-cart {
+  font-weight: 600;
+  background-color: var(--primary-color);
+  min-width: 100px;
+  width: max-content;
+  padding: 0.8rem 1rem;
+  border-radius: 1px;
+  border: none;
+  cursor: pointer;
+  margin: 0.7rem;
+  border-radius: 0.5rem;
+}
+.btn-cart:hover {
+  background-color: var(--secondary-color);
+}
+.ecomm .btn {
+  margin-left: 1rem;
+}
+
+.overlay-layer {
+  opacity: 0.5;
+  background-color: var(--block-clr);
+}
+
+@media screen and (max-width: 700px) {
+  .horizontal-cards {
+    width: 90%;
+    margin: 0.25rem 0.25rem 0.5rem 0.25rem;
+  }
 }
