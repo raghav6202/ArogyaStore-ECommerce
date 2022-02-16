@@ -43,7 +43,7 @@ margin-top: var(--standard-margin);
 {
  padding: 0.5rem;
  margin: var(--standard-margin);
-    border: 1px solid black;
+    border: 2px  solid black;
     display: flex;
     flex-flow: column;
     justify-content: center;
