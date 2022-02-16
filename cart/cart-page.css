@@ -1,3 +1,7 @@
 @import url("./../styles.css");
-@import url("./../ecomPage.css");
 @import url("./../card.css");
+@import url("./../ecomPage.css");
+.cart-container
+{
+    border: none;
+}
