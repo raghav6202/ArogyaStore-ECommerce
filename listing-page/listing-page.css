@@ -2,6 +2,12 @@
 @import url("./../card.css");
 @import url("./../ecomPage.css");
 
+
+:root{
+
+    --rehab-clr: #fef08a;
+}
+
 .listing-page
 {
     display: flex;
@@ -53,4 +59,82 @@
  
     font-size: 0.8rem;
     margin: 0.7rem;
+}
+
+.product-display-container
+{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.product-display-component
+{
+    margin: var(--large-margin) 0 var(--large-margin) 0;
+    padding: 0.5rem;
+}
+
+.product-grid
+{
+    display: grid;
+    gap: 1.5rem 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(min-content,max-content);
+}
+
+.ayurveda
+{
+
+    background-color: var(--secondary-color);
+
+}
+
+.rehab
+{
+    background-color: var(--rehab-clr);
+}
+
+
+
+@media screen and (max-width:1280px) {
+    
+    .product-grid{
+
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+    
+}
+
+
+@media screen and (max-width:768px) {
+    
+    .product-grid{
+
+    grid-template-columns: 1fr 1fr;
+   
+}
+    
+}
+
+
+
+@media screen and (max-width:768px) {
+    
+    .product-grid{
+
+    grid-template-columns: 1fr 1fr;
+   
+}
+    
+}
+
+
+@media screen and (max-width:480px) {
+    
+    .product-grid{
+
+    
+        gap: 0.5rem 1rem;
+   
+}
+    
 }
