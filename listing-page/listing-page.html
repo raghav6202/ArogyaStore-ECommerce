@@ -1,13 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listing Page</title>
+    <link rel="stylesheet" href="listing-page.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-logo-name">
+        <img
+          class="ecom-logo"
+          src="./../images/Health people abstract logo (1).png"
+          alt="logo image"
+        />
+        <a class="ecom-heading" href="./../index.html">
+          <span class="primary-color">Arogya</span
+          ><span class="secondary-color">Store</span>
+        </a>
+      </div>
+
+      <div class="nav-search">
+        <button type="submit" class="small-btn">
+          <i class="fi-xnsuhl-search"></i>
+        </button>
+        <input class="search-bar" type="search" placeholder="Search" value="" />
+      </div>
+
+      <div class="nav-components">
+        <a href="http://" class="nav-links active"
+          ><i class="fi-xnsuxl-user-solid"></i> Login</a
+        >
+        <a href="http://" class="nav-links"
+          ><i class="fi-xnsuxl-heart-solid"></i> Whishlist</a
+        >
+        <a href="http://" class="nav-links"
+          ><i class="fi-xwsuhl-shopping-cart-solid"></i> Cart</a
+        >
+      </div>
+    </nav>
+
+    <aside class="side-bar">
+      <div class="filters">
+        <div class="filter-component">
+          <div class="filter-title">PRICE</div>
+
+          <div class="filter-list">
+            <label for="radio-1">
+              <input type="radio" name="low to high" id="radio-1" />
+              Low To High
+            </label>
+
+            <label for="radio-2">
+              <input type="radio" name="low to high" id="radio-2" />
+              High To Low
+            </label>
+          </div>
+        </div>
+
+        <div class="filter-component">
+          <div class="filter-title">AVAILABILITY</div>
+
+          <div class="filter-list">
+            <label for="checkbox-1">
+              <input type="checkbox" name="low to high" id="checkbox-1" />
+              Include Out Of Stock
+            </label>
+          </div>
+        </div>
+
+        <div class="filter-component">
+          <div class="filter-title">BRANDS</div>
+
+          <div class="filter-list">
+            <label for="cbox-1"
+              ><input
+                id="cbox-1"
+                name="checkbox"
+                type="checkbox"
+              />ALL</label
+            >
+            <label for="cbox-2"
+              ><input
+                id="cbox-2"
+                name="checkbox"
+                type="checkbox"
+              />G.S.K</label
+            ><label for="cbox-3"
+              ><input
+                id="cbox-3"
+                name="checkbox"
+                type="checkbox"
+              />DR.REDDYS</label
+            ><label for="cbox-4"
+              ><input
+                id="cbox-4"
+                name="checkbox"
+                type="checkbox"
+              />PFIZER</label
+            ><label for="cbox-5"
+              ><input
+                id="cbox-5"
+                name="checkbox"
+                type="checkbox"
+              />MEDTRONIC</label
+            ><label for="cbox-6"
+              ><input
+                id="cbox-6"
+                name="checkbox"
+                type="checkbox"
+              />ASTRA-ZENECA</label
+            ><label for="cbox-7"
+              ><input
+                id="cbox-7"
+                name="checkbox"
+                type="checkbox"
+              />CIPLA</label
+            ><label for="cbox-8"
+              ><input
+                id="cbox-8"
+                name="checkbox"
+                type="checkbox"
+              />SANOFI</label
+            ><label for="cbox-9"
+              ><input
+                id="cbox-9"
+                name="checkbox"
+                type="checkbox"
+              />PHILIPS</label
+            >
+     
+          </div>
+        </div>
+
+
+        <div class="filter-component">
+            <div class="filter-title">CATEGORIES</div>
+  
+            <div class="filter-list">
+              <label for="cbox-1"
+                ><input
+                  id="cat-1"
+                  name="checkbox"
+                  type="checkbox"
+                />ALL</label
+              >
+              <label for="cbox-2"
+                ><input
+                  id="cat-2"
+                  name="checkbox"
+                  type="checkbox"
+                />Medicenes</label
+              ><label for="cbox-3"
+                ><input
+                  id="cat-3"
+                  name="checkbox"
+                  type="checkbox"
+                />Med-Tech</label
+              ><label for="cbox-4"
+                ><input
+                  id="cat-4"
+                  name="checkbox"
+                  type="checkbox"
+                />Self-Testing Kits</label
+              ><label for="cbox-5"
+                ><input
+                  id="cat-5"
+                  name="checkbox"
+                  type="checkbox"
+                />Rehab-Kits</label
+              >
+            </div>
+          </div>
+
+      </div>
+    </aside>
+
+    <footer class="ecom-footer footer-container">
+      <div class="sub-caption">Developed with ❤️ By Raghav Chandra V S</div>
+
+      <div class="footer-icons">
+        <a href="https://github.com/raghav6202" class="small-icons"
+          ><i class="fi-xnsuxl-github"></i
+        ></a>
+
+        <a href="https://twitter.com/r_a___v" class="small-icons"
+          ><i class="fi-xnsuxl-twitter-solid"></i
+        ></a>
+
+        <a
+          href="https://www.linkedin.com/in/raghav-chandra-vs-33575218b/"
+          class="small-icons"
+          ><i class="fi-xnsuxl-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
 </html>
