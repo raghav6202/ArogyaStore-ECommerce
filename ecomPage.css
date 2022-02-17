@@ -207,6 +207,7 @@
 @media screen and (max-width: 800px) {
   .nav-bar {
     justify-content: center;
+    width: 80%;
   }
 
   .nav-search {

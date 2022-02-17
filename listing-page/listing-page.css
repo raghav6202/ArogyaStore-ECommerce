@@ -81,8 +81,19 @@
 }
 
 @media screen and (max-width: 768px) {
+ 
   .product-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .filter-component
+  {
+border: none;
+
+  }
+  .listing-page {
+   flex-flow: column;
+   align-items: center;
   }
 }
 
@@ -94,6 +105,7 @@
 
 @media screen and (max-width: 480px) {
   .product-grid {
+    grid-template-columns: 1fr;
     gap: 0.5rem 1rem;
   }
 }
