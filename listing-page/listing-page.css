@@ -1,3 +1,47 @@
 @import url("./../styles.css");
 @import url("./../card.css");
 @import url("./../ecomPage.css");
+
+.side-bar
+{
+    
+    flex: 0 0 15.5rem;
+    margin-right: 1.25rem;
+    height: max-content;
+}
+
+.filters
+{
+    padding: 0 0 0.5rem;
+    margin: 1rem;
+    width: inherit;
+    max-width: 100%;
+    cursor: pointer;
+   
+}
+
+.filter-component
+{
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.filter-title
+{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.filter-list label {
+    
+    font-size: 0.6rem;
+    margin-left: 0rem;
+}
+
+.radio label, .filter-list label {
+    display: flex;
+    align-items: center;
+ 
+    font-size: 0.8rem;
+    margin: 0.7rem;
+}
