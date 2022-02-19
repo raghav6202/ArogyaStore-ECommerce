@@ -1,5 +1,7 @@
-@import url("./../styles.css");
-@import url("./../card.css");
+
+@import url("https://jatayui.netlify.app/comp-lib.css");
+/* ---------comp-lib----- */
+
 @import url("./../ecomPage.css");
 
 .cart-container {
