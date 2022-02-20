@@ -11,6 +11,7 @@
   --small-margin: 0.2rem;
   --large-margin: 1rem;
   --shop-btn-hover: #06b6d4;
+  --footer-clr: #eaeaec;
 }
 
 * {
@@ -202,8 +203,7 @@
 }
 
 .ecom-footer {
-  background-color: #eaeaec;
-  grid-area: footer;
+  background-color: var(--footer-clr);
 }
 
 @media screen and (max-width: 800px) {
