@@ -202,6 +202,10 @@
   text-align: right;
 }
 
+.close-btn:hover
+{
+  color: var(--secondary-color);
+}
 .ecom-footer {
   background-color: var(--footer-clr);
 }
