@@ -10,6 +10,7 @@
   --standard-margin: 0.5rem;
   --small-margin: 0.2rem;
   --large-margin: 1rem;
+  --shop-btn-hover: #06b6d4;
 }
 
 * {
@@ -146,7 +147,8 @@
 }
 
 .btn-carousel:hover {
-  background-color: #06b6d4;
+  background-color: var(--shop-btn-hover);
+  border-color: var(--shop-btn-hover);
 }
 
 .ecomm-sub-container {
