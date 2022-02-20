@@ -1,8 +1,10 @@
-
 @import url("https://jatayui.netlify.app/comp-lib.css");
 /* ---------comp-lib----- */
 
 @import url("./../ecomPage.css");
+:root {
+  --border-clr: black;
+}
 
 .cart-container {
   border: none;
@@ -37,7 +39,7 @@
 .total-price-details {
   padding: 0.5rem;
   margin: var(--standard-margin);
-  border: 2px solid black;
+  border: 2px solid var(--border-clr);
   display: flex;
   flex-flow: column;
   justify-content: center;
